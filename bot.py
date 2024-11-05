@@ -30,4 +30,4 @@ document_path2 = os.path.join(os.path.expanduser("~"), "Documents", "port_scan_r
 
 
 send_document(bot_token, chat_id, document_path)
-send_document(bot_token,document_path2)
+send_document(bot_token,chat_id,document_path2)
