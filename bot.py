@@ -25,7 +25,9 @@ def send_document(bot_token, chat_id, document_path):
 # Replace these values with your actual bot token, chat ID, and file path
 bot_token = os.getenv('TELEGRAM_BOT_TOKEN')
 chat_id = os.getenv('TELEGRAM_CHAT_ID')
-document_path = os.path.join(os.path.expanduser("~"), "Documents", "nmap_scan.txt")
+document_path = os.path.join(os.path.expanduser("~"), "Documents", "scan_results.txt")
+document_path2 = os.path.join(os.path.expanduser("~"), "Documents", "port_scan_results.txt")
 
 
 send_document(bot_token, chat_id, document_path)
+send_document(bot_token,document_path2)
