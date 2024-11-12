@@ -1,8 +1,10 @@
 import ipaddress
+import os
 
 # Input and output file names
-input_file = "Documents/inet_mask_output.txt"
-output_file = "Documents/network_ips.txt"
+home_dir = os.path.expanduser("~")
+input_file = os.path.join(home_dir,"Documents","inet_mask_output.txt")
+output_file = os.path.join(home_dir, "Documents", "network_ips.txt")
 
 # Open the output file for writing
 with open(output_file, "w") as outfile:
